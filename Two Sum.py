@@ -5,6 +5,6 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        for i,x in enumerate(nums):
-            if target - x in nums[i+1:]:
-                return [i, i+1+nums[i+1:].index(target-x)]
+        for i, x in enumerate(nums):
+            if target - x in nums[i + 1:]:
+                return [i, i + 1 + nums[i + 1:].index(target - x)]

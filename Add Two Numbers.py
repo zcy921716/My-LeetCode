@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         """
@@ -17,30 +18,29 @@ class Solution(object):
         q = l2
         k = ListNode(0)
         kk = k
-        
+
         while p or q:
-            
+
             if p:
                 x = p.val
                 p = p.next
             else:
                 x = 0
-                
+
             if q:
                 y = q.val
                 q = q.next
             else:
                 y = 0
-                
+
             tmp = flag + x + y
-            flag = int(tmp/10)
+            flag = int(tmp / 10)
             kk.next = ListNode(tmp - flag * 10)
-            
-            
+
             kk = kk.next
-        
+
         else:
             if flag == 1:
                 kk.next = ListNode(1)
-            
+
             return k.next
