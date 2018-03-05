@@ -22,7 +22,9 @@ class Solution(object):
 
         ans = 0
         i = 0
+
         j = 0
+
         n = len(s)
 
         while j < n:
