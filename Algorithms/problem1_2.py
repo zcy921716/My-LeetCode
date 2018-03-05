@@ -11,7 +11,7 @@ def Euclid(a, b):
         return y, x - (a // b) * y, r
 
 
-with open("input.txt", "r+") as f:
+with open("Algorithms\input.txt", "r+") as f:
     strarray = f.read().split()
     a = int(strarray[0])
     b = int(strarray[1])
