@@ -23,7 +23,7 @@ class Solution(object):
         ans = 0
         i = 0
 
-        j = 0
+        j = 1
 
         n = len(s)
 
