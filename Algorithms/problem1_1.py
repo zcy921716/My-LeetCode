@@ -7,7 +7,7 @@ the output should be 2, 5, 5.What is themaximumnumber ofcomparisons your algorit
 makes if the lengths of the two given lists are m and n, respectively?
 
 """
-with open('input.txt', 'r+') as f:
+with open('Algorithms\input.txt', 'r+') as f:
     array1 = f.readline().split()
     num_1 = [int(c) for c in array1]
     array2 = f.readline().split()
